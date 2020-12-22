@@ -1,0 +1,23 @@
+body{
+    color: #424242;
+    font-family: sans-serif;
+}
+.spoiler button{
+    background-color: #B9E937;
+    border: 1px solid #00B906;
+    cursor: pointer;
+}
+.spoiler_content{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .5s;
+}
+.spoiler_content.visible{
+    display: inline;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
